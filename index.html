@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do-List</title>
+  <link rel="stylesheet" href="/To-do-list/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <div class="date" id="currentDate">Loading date...</div>
+    </div>
+    <div class="header-right">
+      <button id="themeToggle" aria-label="Toggle dark mode" class="theme-btn">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="todo-card" aria-labelledby="title">
+      <h1 id="title">Your Tasks</h1>
+
+      <form id="taskForm" class="input-area" autocomplete="off">
+        <input id="taskInput" name="task" type="text" required placeholder="Add a new task..." />
+        <button type="submit" class="addBtn">Add</button>
+      </form>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+
+      <div class="controls">
+        <div class="stats" id="stats">0 tasks</div>
+        <div class="filters">
+          <button data-filter="all" class="filter active">All</button>
+          <button data-filter="active" class="filter">Active</button>
+          <button data-filter="completed" class="filter">Completed</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/To-do-list/script.js"></script>
+</body>
+</html>

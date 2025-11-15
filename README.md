@@ -1,4 +1,4 @@
-To-Do List App
+***To-Do List App***
 
 A clean, minimal and responsive To-Do List application built using HTML, CSS and JavaScript.
 It includes task filtering, smooth animations, dark mode and local storage persistence.
